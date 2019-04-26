@@ -10,9 +10,11 @@ let itens=JSON.parse(localStorage.getItem('tasks')) || [];
 // Function to Button;;;; Add the Iten to Array and diplay it.
 const keepItem=()=>{
     let aux=document.querySelector('.c-input__text');
-    itens.push(aux.value);
-    aux.value="";
-    showItem();
+    if(aux.value){
+	itens.push(aux.value);
+	aux.value="";
+	showItem();
+    }
 }
 
 //function to show the itens;
@@ -22,7 +24,9 @@ const showItem=()=>{
     
     itens.forEach((a,b,c)=>{
 	let li=document.createElement('li');
+	li.classList.add('c-output__li');
 	let span=document.createElement('span');
+	span.classList.add('c-output__span');
 	span.innerText="X";
 	span.addEventListener('click',removeItem);
 	li.innerText=a;

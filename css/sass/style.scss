@@ -1,0 +1,39 @@
+body{
+    display:flex;
+    flex-direction:column;
+    h3{
+	text-align:center;
+	color:purple;
+    }
+}
+
+.c-input,.c-output{
+    margin:auto;
+}
+
+.c-input__button{
+    background:purple;
+    color:white;
+    border:unset;
+    &:hover{
+	cursor:pointer;
+    }
+}
+
+.c-output__li{
+    display:flex;
+}
+.c-output__span{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    color:white;
+    background:red;
+    border-radius:50%;
+    width:20px;
+    height:20px;
+    text-align:center;
+    &:hover{
+	cursor:pointer;
+    }
+}
