@@ -38,3 +38,18 @@ body h3 {
 .c-output__span:hover {
   cursor: pointer;
 }
+
+footer {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: purple;
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  color: white;
+}
+footer a {
+  color: white;
+}
